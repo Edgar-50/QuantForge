@@ -17,16 +17,6 @@ QuantForge is built as a research and engineering platform rather than a trading
 
 ---
 
-## Portfolio Lab
-
-The v10 Portfolio Lab supports long-only allocation research with weight caps, Ledoit-Wolf covariance shrinkage, shrunk expected returns, multiple optimisation methods, selectable history windows, diversification diagnostics and saved portfolio workflows.
-
-![QuantForge Portfolio Lab](assets/portfolio-lab-v10.webp)
-
-The interface shown above includes **Max Sharpe, Minimum Volatility, Risk Parity, Hierarchical Risk Parity (HRP), Equal Weight**, adjustable maximum asset weights, 1Y/2Y/3Y research windows, portfolio optimisation controls and post-optimisation metrics such as expected return, volatility, in-sample Sharpe, effective number of assets and diversification.
-
----
-
 ## Why QuantForge
 
 Many finance portfolio projects stop at a price chart or a single backtest. QuantForge is designed to demonstrate a wider quantitative-engineering stack:
