@@ -43,6 +43,48 @@ Built with a modular **FastAPI / numerical Python** backend and a responsive Jav
 
 ---
 
+## Platform Screenshots
+
+QuantForge v10 includes a complete institutional-style research interface spanning market analytics, AI forecasting, screening, systematic strategy research, portfolio construction, and risk analysis.
+
+### Markets Dashboard
+
+The Markets workspace combines price action, candlestick analysis, technical overlays, watchlists, and key market statistics in a terminal-style interface.
+
+![QuantForge Markets Dashboard](assets/markets-dashboard.jpg)
+
+### AI Forecast Dashboard
+
+The AI Forecast workspace surfaces ensemble model output, directional probability, forecast confidence ranges, feature importance, and walk-forward validation metrics.
+
+![QuantForge AI Forecast Dashboard](assets/ai-forecast-dashboard.jpg)
+
+### Screener Dashboard
+
+The Screener supports multi-asset filtering across equities, ETFs, and crypto using technical conditions, momentum rules, volume thresholds, quantitative scores, and signal classifications.
+
+![QuantForge Screener Dashboard](assets/screener-dashboard.jpg)
+
+### Strategy Lab
+
+The Strategy Lab provides backtesting controls, parameter tuning, equity and drawdown analysis, performance metrics, and side-by-side strategy comparison.
+
+![QuantForge Strategy Lab](assets/strategy-lab-dashboard.jpg)
+
+### Portfolio Lab
+
+The Portfolio Lab supports Max Sharpe, Minimum Volatility, Risk Parity, Hierarchical Risk Parity, Equal Weight, efficient-frontier analysis, allocation diagnostics, and concentration controls.
+
+![QuantForge Portfolio Lab](assets/portfolio-lab-dashboard.jpg)
+
+### Risk Dashboard
+
+The Risk workspace combines VaR, CVaR, drawdown analysis, rolling volatility, scenario stress testing, Monte Carlo simulation, and portfolio risk diagnostics.
+
+![QuantForge Risk Dashboard](assets/risk-dashboard.jpg)
+
+---
+
 ## Why QuantForge
 
 Many finance portfolio projects stop at a price chart or a single backtest. QuantForge is designed to demonstrate a wider quantitative-engineering stack:
