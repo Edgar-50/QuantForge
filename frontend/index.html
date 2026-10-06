@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>QuantForge v10 — Research Terminal</title>
+<meta name="theme-color" content="#07080b"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/static/styles.css"/>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+</head>
+<body>
+<header class="status">
+  <div class="brand">
+    <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4cc9f0"/><stop offset="1" stop-color="#8b7bff"/></linearGradient></defs><rect x="3" y="3" width="26" height="26" rx="8" fill="none" stroke="url(#g)" stroke-width="2"/><path d="M10 21l4-5 3 3 5-8" fill="none" stroke="url(#g)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <b>QUANTFORGE</b><span class="chip">v10</span>
+  </div>
+  <button class="cmdk" id="cmdBtn" aria-label="Open command palette"><span>Search tickers, jump to views…</span><kbd>Ctrl K</kbd></button>
+  <div class="sys">
+    <button id="srcBtn" class="pill" title="Toggle data mode (AUTO tries live providers, SIM forces the offline simulator)">DATA: <b id="srcMode">AUTO</b></button>
+    <span class="pill" id="srcLabel">—</span>
+    <span class="pill mkt" id="mktState">—</span>
+    <span class="pill"><i class="dot" id="apiDot"></i><span id="latency">—</span></span>
+    <span class="pill mono" id="clock">--:--:-- UTC</span>
+  </div>
+</header>
+<div class="tape" aria-label="Market ticker"><div class="tape-in" id="tape"></div></div>
+<div class="shell">
+  <nav class="rail" id="rail">
+    <a data-view="terminal"  title="Markets (1)"><svg viewBox="0 0 24 24"><path d="M3 17l5-6 4 4 8-9"/><path d="M3 21h18"/></svg><span>Markets</span></a>
+    <a data-view="forecast"  title="AI Forecast (2)"><svg viewBox="0 0 24 24"><path d="M12 3l2.2 5.3L20 10l-5.8 1.7L12 17l-2.2-5.3L4 10l5.8-1.7z"/><path d="M19 17l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg><span>AI Forecast</span></a>
+    <a data-view="screener"  title="Screener (3)"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg><span>Screener</span></a>
+    <a data-view="strategy"  title="Strategy Lab (4)"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>Strategy</span></a>
+    <a data-view="portfolio" title="Portfolio Lab (5)"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v9l7 4"/></svg><span>Portfolio</span></a>
+    <a data-view="risk"      title="Risk Center (6)"><svg viewBox="0 0 24 24"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg><span>Risk</span></a>
+    <a data-view="options"   title="Options Lab (7)"><svg viewBox="0 0 24 24"><path d="M3 18h6l3-12 3 12h6"/></svg><span>Options</span></a>
+    <div class="rail-foot"><a href="/docs" target="_blank" title="API docs"><svg viewBox="0 0 24 24"><path d="M8 6l-5 6 5 6M16 6l5 6-5 6"/></svg><span>API</span></a></div>
+  </nav>
+  <main id="view" tabindex="-1"></main>
+</div>
+<div id="palette" class="palette" hidden>
+  <div class="pal-box" role="dialog" aria-label="Command palette"><input id="palInput" placeholder="Type a ticker (e.g. TSLA) or a view name…" autocomplete="off" spellcheck="false"/><ul id="palList"></ul>
+  <div class="pal-foot"><span><kbd>↑</kbd><kbd>↓</kbd> navigate</span><span><kbd>↵</kbd> open</span><span><kbd>esc</kbd> close</span></div></div>
+</div>
+<div id="toasts" class="toasts" aria-live="polite"></div>
+<script src="/static/core.js"></script>
+<script src="/static/views_a.js"></script>
+<script src="/static/views_b.js"></script>
+</body>
+</html>
