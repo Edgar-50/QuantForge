@@ -1,19 +1,45 @@
-# QuantForge v10 — Advanced Quantitative Research Terminal
+<div align="center">
 
-[![Python](https://img.shields.io/badge/Python-3.12+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-Research_API-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![Tests](https://img.shields.io/badge/tests-36%20passing-brightgreen)](#testing)
-[![Deploy](https://img.shields.io/badge/Render-live-46E3B7?logo=render&logoColor=black)](https://quantforge-v10.onrender.com)
-[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+# QuantForge v10
+### Quantitative Research · Portfolio Engineering · Financial Machine Learning
 
-> **QuantForge v10** is an institutional-style quantitative research platform for portfolio construction, systematic strategy research, derivatives analytics, volatility modelling, market-regime detection, risk analysis and leakage-aware machine-learning forecasting.
+**A research terminal for exploring markets, validating strategies and investigating risk.**
 
-**Live application:** https://quantforge-v10.onrender.com  
-**API documentation:** https://quantforge-v10.onrender.com/docs
+[Live Terminal](https://quantforge-v10.onrender.com) · [API Documentation](https://quantforge-v10.onrender.com/docs) · [Source Code](https://github.com/Edgar-50/QuantForge)
 
-QuantForge is built as a research and engineering platform rather than a trading-signal toy. The application combines a modular FastAPI backend with a keyboard-driven research terminal, reproducible numerical models, multiple portfolio optimisers, walk-forward validation, stress testing and a simulated/live market-data provider chain.
+![Python](https://img.shields.io/badge/Python-3.12+-3776AB?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-API-009688?logo=fastapi&logoColor=white)
+![Research](https://img.shields.io/badge/Quant_Research-v10-8B5CF6)
+![Tests](https://img.shields.io/badge/Tests-36-green)
+![License](https://img.shields.io/badge/License-MIT-blue)
 
-> **Research and education only.** QuantForge does not provide investment advice and does not execute live trades.
+</div>
+
+---
+
+QuantForge unifies **market analytics, walk-forward ML forecasting, quantitative screening, strategy backtesting, multi-asset portfolio optimisation, scenario-based risk analysis, and options pricing** in one keyboard-driven workspace.
+
+Built with a modular **FastAPI / numerical Python** backend and a responsive JavaScript interface, the platform prioritises reproducible experiments, realistic validation and clear separation between simulated and live data.
+
+> **Research-only software:** QuantForge does not execute trades or offer investment advice. Model estimates and synthetic demonstrations do not establish an investable edge.
+
+### Explore the platform
+
+| Workspace | What it provides |
+| --- | --- |
+| **Markets** | OHLCV exploration, candlesticks, technical indicators, volatility and regime analysis |
+| **AI Forecast** | Ensemble direction estimates, quantile forecast cones, walk-forward tests and model diagnostics |
+| **Screener** | Ranked instrument universe with technical and momentum filters |
+| **Strategy Lab** | Cost-aware systematic backtesting, signal inspection and in-sample/out-of-sample comparison |
+| **Portfolio Lab** | Max Sharpe, minimum-volatility, risk parity and HRP allocation, constraints and holdout checks |
+| **Risk Center** | VaR/CVaR, drawdowns, stress scenarios, rolling statistics and Monte Carlo |
+| **Options Lab** | European and American pricing, Greeks, IV solving and multi-leg payoff research |
+
+---
+
+### Contents
+
+[Platform capabilities](#v10-capabilities) · [Validation philosophy](#validation-philosophy) · [Architecture](#architecture) · [Data sources](#data-provider-chain) · [API](#api-v10) · [Run locally](#run-locally) · [Testing](#testing) · [Deployment](#deployment) · [Limitations](#known-limitations)
 
 ---
 
